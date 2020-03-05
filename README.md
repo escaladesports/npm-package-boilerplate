@@ -5,6 +5,7 @@ Uses Babel and Jest, comes with the following scripts by default:
 - `yarn build` – transpiles all files in `src` and outputs to `dist`
 - `yarn test` – runs Jest (assuming any files use it; see example in `src`)
 
+**NOTE:** To verify Babel is correctly transpiling `async` functions, you should run `build` before `test` so that Jest will also go through `dist/test.js`.
 
 ## Adding a new package to a monorepo:  
 1. Clone this repo **outside** the monorepo folder
