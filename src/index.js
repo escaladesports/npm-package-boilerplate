@@ -3,7 +3,7 @@ import 'regenerator-runtime/runtime'
 
 
 /**
- * Adds numbers together (bogus async for testing purposes)
+ * Adds numbers together
  */
 export function sum(...nums) {
   return nums.reduce((acc, curr) => acc + curr, 0)
@@ -11,7 +11,7 @@ export function sum(...nums) {
 
 
 /**
- * Delayed version of above; returns promise for testing Babel
+ * Delayed version of above; returns bogus promise for testing Babel
  */
 export function sumDelayed(...nums) {
   return new Promise(resolve => {
